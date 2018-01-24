@@ -17,12 +17,7 @@ module.exports = {
       //conver html to pdf in temp directory
       console.log('begin stream into', file);
       // get base from req
-      if(env === 'development') {
-        pdfOptions.base = "http:localhost:8500/";
-      } else {
-        pdfOptions.base = data.base;
-      }
-
+      pdfOptions.base = data.BASE;
       pdf.create(data.HTML, pdfOptions).toStream((err, stream) => {
         let w = fs.createWriteStream(tmpPath + file);
         stream.pipe(w);

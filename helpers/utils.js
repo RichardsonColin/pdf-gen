@@ -7,6 +7,6 @@ module.exports = {
 
   hasPDFParams: function(body) {
     return body.hasOwnProperty("HTML") 
-      && body.hasOwnProperty("base");
+      && body.hasOwnProperty("BASE");
   }
 }
