@@ -10,8 +10,6 @@ module.exports = {
     if(utils.isInWhitelist(whitelist, url)) {
       next();
     } else {
-      console.log("checking")
-      console.log("CFMKEY", CFMKEY, process.env.PORT);
       // check api key **this will be refactored once a db is in place
       if(!req.headers['x-cfm-key'] || req.headers['x-cfm-key'] !== CFMKEY) {
         res.sendStatus(401);
