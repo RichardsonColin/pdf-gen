@@ -1,1 +1,1 @@
-export PATH=$PATH:$HOME/tmp/
+mkdir $HOME/tmp
