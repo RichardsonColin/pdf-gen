@@ -4,9 +4,9 @@ module.exports = {
       return l === path;
     }) > -1;
   },
+
   hasPDFParams: function(body) {
-    return (body.hasOwnProperty("data") 
-      && body.data.hasOwnProperty("HTML") 
-      && body.data.hasOwnProperty("base"));
+    return body.hasOwnProperty("HTML") 
+      && body.hasOwnProperty("base");
   }
 }
