@@ -18,6 +18,7 @@ module.exports = {
       console.log('begin stream into', file);
       // get base from req
       pdfOptions.base = data.BASE;
+      console.log("base for stylesheet is:", data.BASE);
       pdf.create(data.HTML, pdfOptions).toStream((err, stream) => {
         let w = fs.createWriteStream(tmpPath + file);
         stream.pipe(w);
