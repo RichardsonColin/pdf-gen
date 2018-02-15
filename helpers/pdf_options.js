@@ -1,3 +1,4 @@
+const phantomPath = require('witch')('phantomjs');
 module.exports = {
   getOptions: function() {
     return {
@@ -7,7 +8,8 @@ module.exports = {
         'width': 10,
         'height': 10
       },
-      'border': '1cm'
+      'border': '1cm',
+      'phantomPath': phantomPath
     }
   }
 }
