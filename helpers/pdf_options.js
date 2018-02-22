@@ -8,8 +8,12 @@ module.exports = {
         'width': 10,
         'height': 10
       },
-      'border': '1cm',
-      'phantomPath': phantomPath
+      'border': {
+        'top': '0',
+        'bottom': '1cm',
+        'right': '1cm',
+        'left': '1cm'
+      }
     }
   }
 }
