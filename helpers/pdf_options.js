@@ -9,11 +9,12 @@ module.exports = {
         'height': 10
       },
       'border': {
-        'top': '0',
+        'top': '.25cm',
         'bottom': '1cm',
         'right': '1cm',
         'left': '1cm'
-      }
+      },
+      'renderDelay': 2000
     }
   }
 }
