@@ -14,7 +14,7 @@ module.exports = {
         'right': '1cm',
         'left': '1cm'
       },
-      'renderDelay': 2000
+      'renderDelay': 3000
     }
   }
 }
