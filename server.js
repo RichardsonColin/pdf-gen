@@ -10,8 +10,8 @@ const middlewares = require('./middlewares/middlewares.js');
 const apiRoutes = require('./routes/api');
 //middlewares
 app.use(cors());
-app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 app.use(bodyParser.json({ limit: '10mb' }));
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: true, parameterLimit: 10000 }));
 app.use(middlewares.checkAPIKey);
 
 // routes
